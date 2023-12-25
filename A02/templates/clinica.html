@@ -1,0 +1,33 @@
+<!-- Página que exibe detalhes sobre uma clínica médica específica.
+     Destaca-se pela utilização de dados dinâmicos. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> AraClin: Catálogo de Clínicas Médicas </title>
+        <style>
+            body {
+                background-color: #cef1e7;
+                text-align: center;
+            }
+            h2 {
+                color: #067354;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> AraClin </h2> 
+        <h3> {{dados.nome}} </h3> 
+        <p>
+            Especialidade: <br/> {{dados.especialidade}} <br/><br/>
+            Médicos: <br/> {{dados.medicos}} <br/><br/> 
+            Convênios: <br/> {{dados.convenios}} <br/><br/> 
+            Forma de pagamento: <br/> {{dados.pagamento}} <br/><br/> 
+            Email: <br/> {{dados.email}} <br/><br/> 
+            Telefone: <br/> {{dados.telefone}} <br/><br/> 
+            Endereço: <br/> {{dados.endereco}}
+        </p>
+    </body>
+</html>
